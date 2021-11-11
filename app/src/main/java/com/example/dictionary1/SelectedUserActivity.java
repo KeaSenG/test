@@ -20,7 +20,8 @@ public class SelectedUserActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         if(intent.getExtras() != null) {
-            UserModel userModel = (UserModel) intent.getSerializableExtra("data");
+            UserModel userModel = (UserModel) intent.getSerializableExtra("Data");
+
 
             tvUser.setText(userModel.getUsername());
         }
